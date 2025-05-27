@@ -1,6 +1,5 @@
 # NicoNico DarkTheme
-
-NicoNico DarkThemeは、ニコニコ動画をダークモード化するブラウザ拡張機能です。  
+NicoNico DarkThemeは、ニコニコ動画をダークモード化するChrome拡張機能です。  
 公式でダークモードに対応しているページには適用されません。
 
 ## 注意事項
@@ -8,7 +7,7 @@ NicoNico DarkThemeは、ニコニコ動画をダークモード化するブラ�
 
 ## ライセンス
 
-MIT License
+[MIT License](./LICENSE)
 
 ---
 ご意見・バグ報告はIssueまでお願いします。
