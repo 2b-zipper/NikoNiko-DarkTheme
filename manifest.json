@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "Niconico Dark Theme",
+  "version": "1.0",
+  "description": "ニコニコ動画をダークモード化します",
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.nicovideo.jp/*",
+        "https://seiga.nicovideo.jp/*",
+        "https://live.nicovideo.jp/*"
+      ],
+      "exclude_matches": [
+        "https://www.nicovideo.jp/ranking/*",
+        "https://www.nicovideo.jp/watch/*"
+      ],
+      "js": ["content.js"],
+      "css": ["./css/nicovideo.css"]
+    }
+  ]
+}

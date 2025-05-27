@@ -1,0 +1,142 @@
+/* 共通変数 */
+:root {
+  --background-main: #181818;
+  --background-secondary: #222;
+  --background-header: #1a1a1a;
+  --background-card: #282828;
+  --background-row: #191919;
+  --background-genre-link: #333;
+  --color-main: #e0e0e0;
+  --color-link: #80bfff;
+  --color-title: #f5f5f5;
+  --color-gray: #b0b0b0;
+  --border-main: #252525;
+  --border-secondary: #333;
+  --border-input: #444;
+  --shadow-thumb: 0 0 4px #000a;
+  --text-shadow-title: 0 1px 2px #000a;
+}
+
+/* 背景・文字 */
+body,
+html {
+  background: var(--background-main) !important;
+  color: var(--color-main) !important;
+}
+
+/* 共通背景・枠・文字 */
+.TopPage-footer,
+.VideoTopGenreListContainer,
+.TopPage-section,
+.TopPage-wideSection,
+.PersonalFrameContainer,
+.ContentsPickupContainer,
+.ContentsPickupCard,
+.ThemeContainer,
+.AuroraVisionContainer,
+.AuroraVisionCard,
+.StageBackground,
+.CrossSearch,
+.CrossSearch-form,
+.CrossSearch-input,
+.CrossSearch-button,
+.FrameTitleLink-titleText,
+.GenreTopPageHeader,
+li.VideoTopGenreListContainer-item > [href],
+.ForYouRankingContainer-rankingTitle > [href],
+.simplebar-content-wrapper {
+  background: var(--background-secondary) !important;
+  color: var(--color-main) !important;
+  border-color: var(--border-main) !important;
+}
+
+/* ヘッダー */
+.HeaderContainer {
+  background: var(--background-header) !important;
+}
+
+/* ボタン */
+.NicoNewsContainer-commentCount,
+.SeeMoreLink-text,
+.TagItem-link,
+.TagItem_small.TagItem > .TagItem-link,
+.TagItem_medium.TagItem > .TagItem-link,
+div.TrendyTagsWithVideosContainer-area > .TagItem_medium.TagItem > .TagItem-link,
+div.TagWithVideoItem > .TagItem_medium.TagItem > .TagItem-link,
+.RepresentedTag {
+  background: var(--background-secondary) !important;
+  color: var(--color-link) !important;
+  border-color: var(--border-secondary) !important;
+}
+
+/* ジャンルリンク */
+a[href^="/video_top/genre/"] {
+  background: var(--background-genre-link) !important;
+  border: 1px solid var(--background-genre-link) !important;
+}
+
+/* トレンドタグのグラデーション */
+.TrendyTagsContainer-expands {
+  background: linear-gradient(180deg, rgba(24,24,24,0.7), var(--background-main) 18px);
+}
+
+/* 動画タイトル・説明 */
+.ContentsDigestFrame-description,
+.AuroraVisionCard-metaCatch,
+.ContentsPickupCard-metaPickupComment,
+.ContentsDigestFrame-cardMetaTitle,
+.NC-CardTitle_fixed3Line.NC-VideoCard-title.NC-CardTitle {
+  color: var(--color-title) !important;
+  text-shadow: var(--text-shadow-title);
+}
+
+/* タグ付き動画記事グラデ */
+.TagWithVideoItem-articleLink {
+  background: linear-gradient(90deg, rgba(24,24,24,0), var(--background-main) 20px) !important;
+}
+
+/* サムネ */
+.Thumbnail-image {
+  box-shadow: var(--shadow-thumb) !important;
+}
+
+/* リンク色 */
+a,
+.NiconicoLogo a {
+  color: var(--color-link) !important;
+}
+
+/* 入力系 */
+input,
+button,
+select,
+textarea {
+  background: var(--background-secondary) !important;
+  color: var(--color-main) !important;
+  border: 1px solid var(--border-input) !important;
+}
+
+/* 灰色文字 */
+.ColumnTitle-linkText,
+.timestamp {
+  color: var(--color-gray) !important;
+}
+
+/* ハンバーガーボタンの色反転 */
+svg path[fill="#252525"] {
+  fill: var(--color-title) !important;
+}
+
+
+/* 検索行セレクタ */
+.CrossSearch-rowSelector {
+  background: var(--background-row) !important;
+  color: var(--color-main) !important;
+  border: 1px solid var(--border-secondary) !important;
+}
+
+/* ニュース・広告カード */
+.NicoNewsContainer-photoNewsContent,
+.NicoAdContainer-cardContent {
+  background: var(--background-card) !important;
+}
