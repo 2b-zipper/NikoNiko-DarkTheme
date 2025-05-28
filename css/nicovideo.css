@@ -39,7 +39,6 @@ html {
 .CrossSearch,
 .CrossSearch-form,
 .CrossSearch-input,
-.CrossSearch-button,
 .FrameTitleLink-titleText,
 .GenreTopPageHeader,
 li.VideoTopGenreListContainer-item > [href],
@@ -51,8 +50,9 @@ li.VideoTopGenreListContainer-item > [href],
 }
 
 /* ヘッダー */
-.HeaderContainer {
-  background: var(--background-header) !important;
+.HeaderContainer,
+.HeaderContainer-content {
+  background: var(--background-main) !important;
 }
 
 /* ボタン */
@@ -181,7 +181,9 @@ div.popular_manga_block__item,
 div.clearfix.rank_item,
 .mg_comment,
 .mg_banner,
-#mg_official > ul {
+#mg_official > ul,
+.NC-MylistMediaObject-thumbnails,
+.AchievementContainer-contents {
   background: var(--background-card) !important;
   color: var(--color-main) !important;
 }
@@ -194,12 +196,17 @@ div.popular_illust_block__item,
 .new_illust.box > .illust_list > .item_list > li.middle.list_item > [href],
 .top_illust_tag,
 .my_area_inner,
-.live_user_box {
+.live_user_box,
+.active.SubMenuLink-link_active.SubMenuLink-link_internal.SubMenuLink-link,
+.SubMenuLink-link_active.SubMenuLink-link_internal.SubMenuLink-link,
+.MylistSideContainer-menuItem.SubMenuLink > .SubMenuLink-link_internal.SubMenuLink-link,
+.AchievementItem,
+li.VideoSideContainer-seriesListItem.SubMenuLink > .SubMenuLink-link_internal.SubMenuLink-link {
   background: #323232 !important;
   color: var(--color-main) !important;
 }
 
-/* タイトル */
+/* 文字 */
 .top_news_block__title h2,
 .top_personalize_block__header,
 .popular_illust_block__title h2,
@@ -208,7 +215,22 @@ div.popular_illust_block__item,
 .title,
 div.mg_recent_header > h3,
 .rank_body.rank_user,
-.mg_body {
+.mg_body,
+.UserDetailsHeader-nickname,
+.UserDetailsStatusItem-linkLabel,
+.UserDetailsHeader-account,
+.TimelineItem-activityMessage,
+div.Timeline-divider,
+.SubMenuLink-label,
+.TimelineSideContainer-linkButton,
+.TimelineActorFilterButton-actorName,
+.BlankState-title,
+.UserItem-nickname,
+.UserItem-description,
+.NC-MediaObjectTitle_fixed1Line.NC-MediaObjectTitle,
+.NC-MylistMediaObject-itemCount,
+.NC-MediaObject-bodyTitle,
+.NC-VideoMediaObject-description {
   color: var(--color-main) !important;
 }
 
@@ -245,4 +267,25 @@ div.mg_recent_header > h3,
   color: var(--color-link) !important;
   text-shadow: var(--background-secondary) !important;
   border-radius: 5px !important;
+}
+
+/* ユーザーページ要素 */
+.UserDetailsContainer,
+.UserDetailsHeader_my.UserDetailsContainer-details.UserDetailsHeader,
+.UserDetailsHeader_user.UserDetailsContainer-details.UserDetailsHeader,
+.MainMenuContainer-menu,
+a.NC-Tab.MainMenuItem,
+.UserDetailsStatus-item.NiconicoPoint,
+.UserIcon,
+.UserItem-content,
+.TimelineSideContainer-settingsButton.SubMenuButton.ModalActionButton,
+.NC-MediaObject-contents.NC-Link,
+.TimelineItem-contentBody {
+  background: var(--background-secondary) !important;
+  color: var(--color-main) !important;
+  border-color: var(--border-main) !important;
+}
+
+.ExpandBoxButton-overlay {
+  background: linear-gradient(to top, var(--background-secondary) 0%, rgba(34,34,34,0.0) 100%) !important;
 }
