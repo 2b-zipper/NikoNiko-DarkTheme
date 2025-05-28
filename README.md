@@ -1,13 +1,15 @@
 # NicoNico DarkTheme
-NicoNico DarkThemeは、ニコニコ動画をダークモード化するChrome拡張機能です。  
-公式でダークモードに対応しているページには適用されません。
+NicoNico DarkTheme is a Chrome extension that enables dark mode for NicoNico Douga.  
+It does not apply to pages that officially support dark mode.
 
-## 注意事項
-- ページの仕様変更等により、正しく動作しない場合があります。
+> This project was created for personal use and has a rough overall implementation. Please understand that it may lack polish or completeness.
 
-## ライセンス
+## Notes
+- Due to changes in the website's structure, the extension may not work as expected.
+
+## License
 
 [MIT License](./LICENSE)
 
 ---
-ご意見・バグ報告はIssueまでお願いします。
+For feedback or bug reports, please open an issue.
