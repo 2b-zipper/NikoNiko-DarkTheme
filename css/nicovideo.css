@@ -1,4 +1,4 @@
-/* 共通変数 */
+/* 変数 */
 :root {
   --background-main: #181818;
   --background-secondary: #222;
@@ -63,7 +63,8 @@ li.VideoTopGenreListContainer-item > [href],
 .TagItem_medium.TagItem > .TagItem-link,
 div.TrendyTagsWithVideosContainer-area > .TagItem_medium.TagItem > .TagItem-link,
 div.TagWithVideoItem > .TagItem_medium.TagItem > .TagItem-link,
-.RepresentedTag {
+.RepresentedTag,
+.FooterContainer-feedback {
   background: var(--background-secondary) !important;
   color: var(--color-link) !important;
   border-color: var(--border-secondary) !important;
@@ -106,14 +107,17 @@ a,
   color: var(--color-link) !important;
 }
 
-/* 入力系 */
-input,
-button,
-select,
-textarea {
+/* 入力 */
+input {
   background: var(--background-secondary) !important;
   color: var(--color-main) !important;
+}
+
+/* 検索ボックス */
+.SearchBox-query {
   border: 1px solid var(--border-input) !important;
+  background: var(--background-secondary) !important;
+  color: var(--color-main) !important;
 }
 
 /* 灰色文字 */
@@ -139,4 +143,106 @@ svg path[fill="#252525"] {
 .NicoNewsContainer-photoNewsContent,
 .NicoAdContainer-cardContent {
   background: var(--background-card) !important;
+}
+
+/* ヘッダー・フッター */
+#header_cnt,
+.header_mode,
+.pankuzu,
+#footer,
+.footer-license {
+  background: var(--background-secondary) !important;
+  color: var(--color-main) !important;
+  border-color: var(--border-main) !important;
+}
+
+/* パーソナライズ・イラスト */
+.top_personalize_block,
+.popular_illust_block__item__info--comment_summary {
+  background: var(--background-card) !important;
+  color: var(--color-main) !important;
+  border-color: var(--border-main) !important;
+}
+
+/* 各種ブロック */
+.top_news_block__title,
+li.top_news_block__item,
+.popular_illust_block__title,
+.nicoad_block__title,
+.nicoad_top_frame,
+.popular_manga_block__title,
+div.popular_manga_block__item,
+.rank_innerbox,
+.my_area.my_illust,
+.live_illust,
+.clearfix.content_area_inner,
+.bar_title,
+#mg_new > .content_area_inner,
+div.clearfix.rank_item,
+.mg_comment,
+.mg_banner,
+#mg_official > ul {
+  background: var(--background-card) !important;
+  color: var(--color-main) !important;
+}
+
+/* パーソナライズ内 */
+.top_personalize_block__body,
+.top_personalize_block__body--empty,
+div.popular_illust_block__item,
+.illust_boom_box.box > .illust_list > .item_list > li.middle.list_item > [href],
+.new_illust.box > .illust_list > .item_list > li.middle.list_item > [href],
+.top_illust_tag,
+.my_area_inner,
+.live_user_box {
+  background: #323232 !important;
+  color: var(--color-main) !important;
+}
+
+/* タイトル */
+.top_news_block__title h2,
+.top_personalize_block__header,
+.popular_illust_block__title h2,
+.nicoad_block__title h2,
+.popular_manga_block__title h2,
+.title,
+div.mg_recent_header > h3,
+.rank_body.rank_user,
+.mg_body {
+  color: var(--color-main) !important;
+}
+
+/* タグ背景 */
+.popular_tag_bg {
+  background: var(--background-row) !important;
+}
+
+/* タイトル装飾 */
+.bar_title h2,
+.opend.cfix.title h2,
+.kind_txt {
+  color: var(--color-main) !important;
+  text-shadow: var(--background-secondary) !important;
+}
+
+/* 情報リスト */
+.info_list_wrapper,
+.info_box.box > .more_link_txt > [href] {
+  background: var(--background-secondary) !important;
+  color: var(--color-main) !important;
+}
+
+/* その他リンク */
+.my_area_inner > .more_link > [href],
+.live_box > .bar_title > .more_link > li > [href],
+.illust_list > .bar_title > .more_link > .more_link_txt > [href],
+.new_illust.box > .bar_title > .more_link > .more_link_txt > [href],
+.tag_list_box.box > .bar_title > .more_link > .more_link_txt > [href],
+[href^="/manga/list"],
+#mg_information > .bar_title > .more_link [href],
+#mg_ranking > .bar_title > .more_link [href] {
+  background: var(--background-secondary) !important;
+  color: var(--color-link) !important;
+  text-shadow: var(--background-secondary) !important;
+  border-radius: 5px !important;
 }

@@ -13,6 +13,8 @@
       "matches": [
         "https://www.nicovideo.jp/*",
         "https://seiga.nicovideo.jp/*",
+        "https://manga.nicovideo.jp/*",
+        "https://ch.nicovideo.jp/*",
         "https://live.nicovideo.jp/*"
       ],
       "exclude_matches": [
